@@ -10,6 +10,6 @@ jobs:
     name: Run MD Link Linter
     runs-on: ubuntu-latest
     steps:
-      - uses: norberttech/md-link-linter@master
+      - uses: norberttech/md-link-linter-action@master
         with:
           path: '.'
