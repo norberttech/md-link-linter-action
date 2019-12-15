@@ -1,0 +1,15 @@
+name: Github CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Run MD Link Linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: norberttech/md-link-linter@master
+        with:
+          path: '.'
