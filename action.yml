@@ -9,4 +9,4 @@ runs:
   using: 'docker'
   image: 'docker://norberttech/md-link-linter'
   args:
-    - "-t --rm -v ${{ inputs.path }}:/app ."
+    - "${{ inputs.path }}"
