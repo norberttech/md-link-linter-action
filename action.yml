@@ -1,0 +1,12 @@
+name: 'MD Link Linter'
+description: 'Iterates through all markdown files in given path checking if links used in them are always valid.'
+inputs:
+  path:  # id of input
+    description: 'Path in which md link linter should start looking for markdown files'
+    required: true
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'norberttech/md-link-linter'
+  args:
+    - ${{ inputs.path }}
