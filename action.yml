@@ -7,6 +7,6 @@ inputs:
     default: '.'
 runs:
   using: 'docker'
-  image: 'norberttech/md-link-linter'
+  image: 'docker://norberttech/md-link-linter'
   args:
     - "-t --rm ${{ inputs.path }}:/app -rm -t ."
